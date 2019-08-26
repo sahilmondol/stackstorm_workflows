@@ -7,7 +7,7 @@ input:
 
 tasks:
   task1:
-    action: stackstorm_workflows.orquesta-basic
+    action: stackstorm_workflows.orquesta-basic message=<% message %>
 
 output:
   - stdout: <% message %>
