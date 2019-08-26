@@ -1,0 +1,14 @@
+---
+name: orquesta-basic
+pack: stackstorm_workflows
+description: Run a workflow
+runner_type: orquesta
+entry_point: workflows/orquesta-basic.yaml
+enabled: true
+parameters:
+    message:
+        type: "string"
+        description: "StackStorm with API!!!!."
+        required: true
+        position: 0
+  
