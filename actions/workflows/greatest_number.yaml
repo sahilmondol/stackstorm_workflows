@@ -15,4 +15,4 @@ tasks:
       - when: <% input2>input1 %>
         action: stackstorm_workflows.smallest_number input1=<% input1 %> input2=<% input2 %>
 output:
-  - output: <% tasks.task1 %>
+  - output: <% input1 %>
