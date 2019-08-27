@@ -1,0 +1,19 @@
+---
+name: greatest_number
+pack: stackstorm_workflows
+description: Run a workflow to find the greatest number
+runner_type: orquesta
+entry_point: workflows/greatest_number.yaml
+enabled: true
+parameters:
+    input1:
+        type: integer
+        description: "StackStorm with Workflows!!!!."
+        required: true
+        position: 0
+    input2:
+        type: integer
+        description: "StackStorm with Workflows!!!!."
+        required: true
+        position: 1
+  

@@ -1,0 +1,18 @@
+version: 1.0
+
+description: A basic workflow that prints a user's input.
+
+input:
+  - input1
+  - input2
+
+tasks:
+  task1:
+    action: stackstorm_workflows.input_number input1=<% input1 %> input2=<% input2 %>
+    next:
+      - when: <% input1>input2 %>
+        action: stackstorm_workflows.greatest_number input1=<% input1 %> input2=<% input2 %>
+      - when: <% input2>input1 %>
+        action: stackstorm_workflows.smallest_number input1=<% input1 %> input2=<% input2 %>
+output:
+  - stdout: <% stdout %>
